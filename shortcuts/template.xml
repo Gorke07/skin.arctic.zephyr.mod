@@ -21,6 +21,10 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="distance_right" tag="property" attribute="name|widgetEdgeDistance" value="yes">36</property>
+        <property name="distance_right">16</property>
+        <property name="distance_bottom" tag="property" attribute="name|widgetEdgeDistance" value="yes">34</property>
+        <property name="distance_bottom">14</property>
         <property name="widgetlisttype" tag="property" attribute="name|widgetListType"/>
         <property name="widgetlisttype">list</property>
         <controls>
@@ -65,6 +69,8 @@
                         <param name="height" value="257"/>
                         <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                         <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                        <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                        <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                         <param name="height_reflection" value="257"/>
                         <param name="top" value="238"/>
                         <param name="reflections" value="Skin.HasSetting(home.widgets.show.reflections)"/>
@@ -76,6 +82,8 @@
                         <param name="height" value="257"/>
                         <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                         <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                        <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                        <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                         <param name="height_reflection" value="257"/>
                         <param name="top" value="238"/>
                         <param name="reflections" value="Skin.HasSetting(home.widgets.show.reflections)"/>
@@ -642,6 +650,10 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="distance_right" tag="property" attribute="name|widgetEdgeDistance" value="yes">36</property>
+        <property name="distance_right">16</property>
+        <property name="distance_bottom" tag="property" attribute="name|widgetEdgeDistance" value="yes">34</property>
+        <property name="distance_bottom">14</property>
         <property name="orientation" tag="property" attribute="name|widget" value="epg">vertical</property>
         <property name="orientation">horizontal</property>
         <controls>
@@ -679,6 +691,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                 </include>
                 <include content="TemplatePvrItemLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]1"/>
@@ -696,6 +710,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                 </include>
                 <!-- FocusLayouts -->
                 <include content="TemplateNormalFocusLayout" condition="$SKINSHORTCUTS[isnormallayout]">
@@ -704,6 +720,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                     <param name="enablehelperbutton" value="true"/>
                 </include>
                 <include content="TemplatePvrFocusLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
@@ -724,6 +742,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                 </include>
                 <content limit="$SKINSHORTCUTS[widgetlimit]" target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
                 <include content="morecontent" condition="Skin.HasSetting(enable.morewidget)">
@@ -835,6 +855,10 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.2" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="distance_right" tag="property" attribute="name|widgetEdgeDistance" value="yes">36</property>
+        <property name="distance_right">16</property>
+        <property name="distance_bottom" tag="property" attribute="name|widgetEdgeDistance" value="yes">34</property>
+        <property name="distance_bottom">14</property>
         <property name="orientation" tag="property" attribute="name|widget.2" value="epg">vertical</property>
         <property name="orientation">horizontal</property>
         <property name="isenabled" tag="property" attribute="name|widgetEnable.2" value="yes">true</property>
@@ -876,6 +900,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                 </include>
                 <include content="TemplatePvrItemLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]2"/>
@@ -894,6 +920,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                     <param name="enablehelperbutton" value="$SKINSHORTCUTS[isenabled]"/>
                 </include>
                 <include content="TemplatePvrFocusLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
@@ -1013,6 +1041,10 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.3" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="distance_right" tag="property" attribute="name|widgetEdgeDistance" value="yes">36</property>
+        <property name="distance_right">16</property>
+        <property name="distance_bottom" tag="property" attribute="name|widgetEdgeDistance" value="yes">34</property>
+        <property name="distance_bottom">14</property>
         <property name="orientation" tag="property" attribute="name|widget.3" value="epg">vertical</property>
         <property name="orientation">horizontal</property>
         <property name="isenabled" tag="property" attribute="name|widgetEnable.3" value="yes">true</property>
@@ -1054,6 +1086,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                 </include>
                 <include content="TemplatePvrItemLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]3"/>
@@ -1072,6 +1106,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                     <param name="enablehelperbutton" value="$SKINSHORTCUTS[isenabled]"/>
                 </include>
                 <include content="TemplatePvrFocusLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
@@ -1191,6 +1227,10 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.4" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="distance_right" tag="property" attribute="name|widgetEdgeDistance" value="yes">36</property>
+        <property name="distance_right">16</property>
+        <property name="distance_bottom" tag="property" attribute="name|widgetEdgeDistance" value="yes">34</property>
+        <property name="distance_bottom">14</property>
         <property name="orientation" tag="property" attribute="name|widget.4" value="epg">vertical</property>
         <property name="orientation">horizontal</property>
         <property name="isenabled" tag="property" attribute="name|widgetEnable.4" value="yes">true</property>
@@ -1232,6 +1272,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                 </include>
                 <include content="TemplatePvrItemLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]4"/>
@@ -1250,6 +1292,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                     <param name="enablehelperbutton" value="$SKINSHORTCUTS[isenabled]"/>
                 </include>
                 <include content="TemplatePvrFocusLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
@@ -1369,6 +1413,10 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.5" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="distance_right" tag="property" attribute="name|widgetEdgeDistance" value="yes">36</property>
+        <property name="distance_right">16</property>
+        <property name="distance_bottom" tag="property" attribute="name|widgetEdgeDistance" value="yes">34</property>
+        <property name="distance_bottom">14</property>
         <property name="orientation" tag="property" attribute="name|widget.5" value="epg">vertical</property>
         <property name="orientation">horizontal</property>
         <property name="isenabled" tag="property" attribute="name|widgetEnable.5" value="yes">true</property>
@@ -1410,6 +1458,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                 </include>
                 <include content="TemplatePvrItemLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]5"/>
@@ -1428,6 +1478,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                     <param name="enablehelperbutton" value="$SKINSHORTCUTS[isenabled]"/>
                 </include>
                 <include content="TemplatePvrFocusLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
@@ -1547,6 +1599,10 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.6" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="distance_right" tag="property" attribute="name|widgetEdgeDistance" value="yes">36</property>
+        <property name="distance_right">16</property>
+        <property name="distance_bottom" tag="property" attribute="name|widgetEdgeDistance" value="yes">34</property>
+        <property name="distance_bottom">14</property>
         <property name="orientation" tag="property" attribute="name|widget.6" value="epg">vertical</property>
         <property name="orientation">horizontal</property>
         <property name="isenabled" tag="property" attribute="name|widgetEnable.6" value="yes">true</property>
@@ -1588,6 +1644,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                 </include>
                 <include content="TemplatePvrItemLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]6"/>
@@ -1606,6 +1664,8 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                    <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                     <param name="enablehelperbutton" value="$SKINSHORTCUTS[isenabled]"/>
                 </include>
                 <include content="TemplatePvrFocusLayout" condition="$SKINSHORTCUTS[ispvrlayout]">
@@ -1678,6 +1738,10 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="distance_right" tag="property" attribute="name|widgetEdgeDistance" value="yes">36</property>
+        <property name="distance_right">16</property>
+        <property name="distance_bottom" tag="property" attribute="name|widgetEdgeDistance" value="yes">34</property>
+        <property name="distance_bottom">14</property>
         <property name="widgetauto" tag="property" attribute="name|widgetAuto" value="$NUMBER[5000]">5000</property>
         <property name="widgetauto" tag="property" attribute="name|widgetAuto" value="$NUMBER[7000]">7000</property>
         <property name="widgetauto" tag="property" attribute="name|widgetAuto" value="$NUMBER[10000]">10000</property>
@@ -1721,6 +1785,8 @@
                         <param name="id" value="301"/>
                         <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                         <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                        <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                        <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                         <param name="reflections" value="Skin.HasSetting(home.widgets.show.reflections)"/>
                         <param name="height" value="325"/>
                     </include>
@@ -1751,6 +1817,8 @@
                         <param name="id" value="301"/>
                         <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                         <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                        <param name="distance_right" value="$SKINSHORTCUTS[distance_right]"/>
+                        <param name="distance_bottom" value="$SKINSHORTCUTS[distance_bottom]"/>
                         <param name="reflections" value="Skin.HasSetting(home.widgets.show.reflections)"/>
                         <param name="height" value="325"/>
                     </include>

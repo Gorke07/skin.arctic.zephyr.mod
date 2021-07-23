@@ -1597,38 +1597,78 @@
     <include name="def_weatherfanart.widgets">
         <param name="bordertopbottom" value="$PARAM[bordertopbottom]" default="10"/>
         <param name="borderleftright" value="$PARAM[borderleftright]" default="10"/>
+        
+        <param name="borderright" value="$PARAM[borderright]" default="16"/>
+        <param name="borderbottom" value="$PARAM[borderbottom]" default="14"/>
         <param name="FanartCode" value="$PARAM[FanartCode]" default=""/>
         <definition>
-            <control type="image">
-                <top>$PARAM[bordertopbottom]</top>
-                <left>$PARAM[borderleftright]</left>
-                <right>$PARAM[borderleftright]</right>
-                <bottom>$PARAM[bordertopbottom]</bottom>
-                <texture border="5" colordiffuse="Panel">common/box.png</texture>
-                <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
+            <control type="group">
+                <visible>!$EXP[HomeIsModernMultiWidgets] + !$EXP[HomeIsVerticalMultiWidgets]</visible>
+                <control type="image">
+                    <top>$PARAM[bordertopleft]</top>
+                    <left>$PARAM[bordertopleft]</left>
+                    <right>$PARAM[borderright]</right>
+                    <bottom>$PARAM[borderbottom]</bottom>
+                    <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                    <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
+                </control>
+                <control type="multiimage" description="Fanart">
+                    <visible>!Skin.HasSetting(weather.hidefanart) + !Skin.HasSetting(weather.fanart.widgets) + String.Contains(Skin.String(weather.fanart.path),multi) + !String.IsEmpty(Skin.String(weather.fanart.path))</visible>
+                    <top>$PARAM[bordertopleft]</top>
+                    <left>$PARAM[bordertopleft]</left>
+                    <right>$PARAM[borderright]</right>
+                    <bottom>$PARAM[borderbottom]</bottom>
+                    <fadetime>600</fadetime>
+                    <timeperimage>12000</timeperimage>
+                    <randomize>true</randomize>
+                    <aspectratio>scale</aspectratio>
+                    <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
+                    <imagepath background="true">$INFO[Skin.String(weather.fanart.path)]$PARAM[FanartCode]$INFO[ListItem.Property(FanartCode)]/</imagepath>
+                </control>
+                <control type="image" description="Fanart">
+                    <visible>!Skin.HasSetting(weather.hidefanart) + !Skin.HasSetting(weather.fanart.widgets) + !String.Contains(Skin.String(weather.fanart.path),multi) + !String.IsEmpty(Skin.String(weather.fanart.path))</visible>
+                    <top>$PARAM[bordertopleft]</top>
+                    <left>$PARAM[bordertopleft]</left>
+                    <right>$PARAM[borderright]</right>
+                    <bottom>$PARAM[borderbottom]</bottom>
+                    <aspectratio>scale</aspectratio>
+                    <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
+                    <texture background="true">$INFO[Skin.String(weather.fanart.path)]$PARAM[FanartCode]$INFO[ListItem.Property(FanartCode)].jpg</texture>
+                </control>
             </control>
-            <control type="multiimage" description="Fanart">
-                <visible>!Skin.HasSetting(weather.hidefanart) + !Skin.HasSetting(weather.fanart.widgets) + String.Contains(Skin.String(weather.fanart.path),multi) + !String.IsEmpty(Skin.String(weather.fanart.path))</visible>
-                <top>$PARAM[bordertopbottom]</top>
-                <left>$PARAM[borderleftright]</left>
-                <right>$PARAM[borderleftright]</right>
-                <bottom>$PARAM[bordertopbottom]</bottom>
-                <fadetime>600</fadetime>
-                <timeperimage>12000</timeperimage>
-                <randomize>true</randomize>
-                <aspectratio>scale</aspectratio>
-                <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
-                <imagepath background="true">$INFO[Skin.String(weather.fanart.path)]$PARAM[FanartCode]$INFO[ListItem.Property(FanartCode)]/</imagepath>
-            </control>
-            <control type="image" description="Fanart">
-                <visible>!Skin.HasSetting(weather.hidefanart) + !Skin.HasSetting(weather.fanart.widgets) + !String.Contains(Skin.String(weather.fanart.path),multi) + !String.IsEmpty(Skin.String(weather.fanart.path))</visible>
-                <top>$PARAM[bordertopbottom]</top>
-                <left>$PARAM[borderleftright]</left>
-                <right>$PARAM[borderleftright]</right>
-                <bottom>$PARAM[bordertopbottom]</bottom>
-                <aspectratio>scale</aspectratio>
-                <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
-                <texture background="true">$INFO[Skin.String(weather.fanart.path)]$PARAM[FanartCode]$INFO[ListItem.Property(FanartCode)].jpg</texture>
+            <control type="group">
+                <visible>$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]</visible>
+                <control type="image">
+                    <top>10</top>
+                    <left>10</left>
+                    <right>$PARAM[borderright]</right>
+                    <bottom>$PARAM[borderbottom]</bottom>
+                    <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                    <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
+                </control>
+                <control type="multiimage" description="Fanart">
+                    <visible>!Skin.HasSetting(weather.hidefanart) + !Skin.HasSetting(weather.fanart.widgets) + String.Contains(Skin.String(weather.fanart.path),multi) + !String.IsEmpty(Skin.String(weather.fanart.path))</visible>
+                    <top>10</top>
+                    <left>10</left>
+                    <right>$PARAM[borderright]</right>
+                    <bottom>$PARAM[borderbottom]</bottom>
+                    <fadetime>600</fadetime>
+                    <timeperimage>12000</timeperimage>
+                    <randomize>true</randomize>
+                    <aspectratio>scale</aspectratio>
+                    <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
+                    <imagepath background="true">$INFO[Skin.String(weather.fanart.path)]$PARAM[FanartCode]$INFO[ListItem.Property(FanartCode)]/</imagepath>
+                </control>
+                <control type="image" description="Fanart">
+                    <visible>!Skin.HasSetting(weather.hidefanart) + !Skin.HasSetting(weather.fanart.widgets) + !String.Contains(Skin.String(weather.fanart.path),multi) + !String.IsEmpty(Skin.String(weather.fanart.path))</visible>
+                    <top>10</top>
+                    <left>10</left>
+                    <right>$PARAM[borderright]</right>
+                    <bottom>$PARAM[borderbottom]</bottom>
+                    <aspectratio>scale</aspectratio>
+                    <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
+                    <texture background="true">$INFO[Skin.String(weather.fanart.path)]$PARAM[FanartCode]$INFO[ListItem.Property(FanartCode)].jpg</texture>
+                </control>
             </control>
         </definition>
     </include>
@@ -1637,8 +1677,8 @@
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <right>0</right>
-            <bottom>0</bottom>
+            <right>6</right>
+            <bottom>4</bottom>
             <texture border="11">common/$VAR[nofocus-shadow10]</texture>
         </control>
         <include>def_weatherfanart.widgets</include>
@@ -1701,8 +1741,8 @@
         <control type="image">
             <left>9</left>
             <top>9</top>
-            <right>9</right>
-            <bottom>9</bottom>
+            <right>15</right>
+            <bottom>14</bottom>
             <texture colordiffuse="BoxWidget" border="4" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
@@ -1891,6 +1931,7 @@
     </include>
 
     <include name="weatherlayoutwidgetsvertical.poster">
+        
         <include>def_weatherposter</include>
     </include>
 
@@ -5064,8 +5105,8 @@
         <control type="image">
             <left>$PARAM[distance]</left>
             <top>$PARAM[distance]</top>
-            <right>$PARAM[distance]</right>
-            <bottom>$PARAM[distance]</bottom>
+            <right>$PARAM[distance_right]</right>
+            <bottom>$PARAM[distance_bottom]</bottom>
             <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
             <texture diffuse="diffuse/widgetsquare_new.png" background="true" fallback="DefaultMovies.png">$VAR[PosterImage]</texture>
             <visible>!String.IsEqual(ListItem.DBType,genre) + !String.EndsWith(Container.FolderPath,Genres)</visible>
@@ -5073,8 +5114,8 @@
         <control type="image">
             <left>$PARAM[distance]</left>
             <top>$PARAM[distance]</top>
-            <right>$PARAM[distance]</right>
-            <bottom>$PARAM[distance]</bottom>
+            <right>$PARAM[distance_right]</right>
+            <bottom>$PARAM[distance_bottom]</bottom>
             <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
             <texture diffuse="diffuse/widgetsquare_new.png" background="true" fallback="DefaultMovies.png">$VAR[ThumbImageGenres]</texture>
             <visible>String.IsEqual(ListItem.DBType,genre) | String.EndsWith(Container.FolderPath,Genres)</visible>
@@ -5568,13 +5609,15 @@
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
         <param name="height" value="$PARAM[height]" default="319"/>
         <param name="height_reflection" value="$PARAM[height_reflection]" default="319"/>
-        <param name="top" value="$PARAM[top]" default="301"/>
+        <param name="top" value="$PARAM[top]" default="296"/>
         <definition>
         <control type="group">
             <height>$PARAM[height]</height>
             <include content="def_widgetsquare">
                 <param name="aspectratio" value="$PARAM[aspectratio]"/>
                 <param name="distance" value="$PARAM[distance]"/>
+                <param name="distance_right" value="$PARAM[distance_right]"/>
+                <param name="distance_bottom" value="$PARAM[distance_bottom]"/>
             </include>
         </control>
         <control type="group">
@@ -5583,8 +5626,8 @@
             <control type="image">
                 <left>$PARAM[distance]</left>
                 <top>$PARAM[distance]</top>
-                <right>$PARAM[distance]</right>
-                <bottom>$PARAM[distance]</bottom>
+                <right>$PARAM[distance_right]</right>
+                <bottom>$PARAM[distance_bottom]</bottom>
                 <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[PosterImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5791,7 +5834,7 @@
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
         <param name="height" value="$PARAM[height]" default="319"/>
         <param name="height_reflection" value="$PARAM[height_reflection]" default="319"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="top" value="$PARAM[top]" default="296"/>
         <definition>
         <control type="group">
             <height>$PARAM[height_reflection]</height>
@@ -5799,8 +5842,8 @@
             <control type="image">
                 <left>$PARAM[distance]</left>
                 <top>$PARAM[distance]</top>
-                <right>$PARAM[distance]</right>
-                <bottom>$PARAM[distance]</bottom>
+                <right>$PARAM[distance_right]</right>
+                <bottom>$PARAM[distance_bottom]</bottom>
                 <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[PosterImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5811,6 +5854,8 @@
             <include content="def_widgetsquare">
                 <param name="aspectratio" value="$PARAM[aspectratio]"/>
                 <param name="distance" value="$PARAM[distance]"/>
+                <param name="distance_right" value="$PARAM[distance_right]"/>
+                <param name="distance_bottom" value="$PARAM[distance_bottom]"/>
             </include>
             <include content="def_widgetfocus">
                 <param name="id" value="$PARAM[id]"/>

@@ -2639,6 +2639,8 @@
                 <param name="aspectratio" value="$PARAM[aspectratio]"/>
                 <param name="height" value="175"/>
                 <param name="distance" value="$PARAM[distance]"/>
+                <param name="distance_right" value="$PARAM[distance_right]"/>
+                <param name="distance_bottom" value="$PARAM[distance_bottom]"/>
             </include>
         </itemlayout>
         <itemlayout height="325" width="325" condition="!String.IsEqual(Container(300).ListItem.Property(widgetaspect$PARAM[shortcutsidshort]),SquareSmall) + !String.IsEqual(Container(300).ListItem.Property(widgetaspect$PARAM[shortcutsidshort]),SquareMedium)">
@@ -2677,6 +2679,8 @@
                 <param name="id" value="$PARAM[shortcutsid]"/>
                 <param name="aspectratio" value="$PARAM[aspectratio]"/>
                 <param name="distance" value="$PARAM[distance]"/>
+                <param name="distance_right" value="$PARAM[distance_right]"/>
+                <param name="distance_bottom" value="$PARAM[distance_bottom]"/>
                 <param name="reflections" value="Skin.HasSetting(home.widgets.show.reflections)"/>
             </include>
         </itemlayout>
@@ -2759,6 +2763,8 @@
                 <param name="id" value="$PARAM[shortcutsid]"/>
                 <param name="height" value="125"/>
                 <param name="distance" value="$PARAM[distance]"/>
+                <param name="distance_right" value="$PARAM[distance_right]"/>
+                <param name="distance_bottom" value="$PARAM[distance_bottom]"/>
             </include>
         </focusedlayout>
         <focusedlayout height="175" width="222" condition="String.IsEqual(Container(300).ListItem.Property(widgetaspect$PARAM[shortcutsidshort]),SquareMedium)">
@@ -2767,6 +2773,8 @@
                 <param name="aspectratio" value="$PARAM[aspectratio]"/>
                 <param name="height" value="175"/>
                 <param name="distance" value="$PARAM[distance]"/>
+                <param name="distance_right" value="$PARAM[distance_right]"/>
+                <param name="distance_bottom" value="$PARAM[distance_bottom]"/>
             </include>
         </focusedlayout>
         <focusedlayout height="325" width="325" condition="!String.IsEqual(Container(300).ListItem.Property(widgetaspect$PARAM[shortcutsidshort]),SquareSmall) + !String.IsEqual(Container(300).ListItem.Property(widgetaspect$PARAM[shortcutsidshort]),SquareMedium)">
@@ -2774,6 +2782,8 @@
                 <param name="id" value="$PARAM[shortcutsid]"/>
                 <param name="aspectratio" value="$PARAM[aspectratio]"/>
                 <param name="distance" value="$PARAM[distance]"/>
+                <param name="distance_right" value="$PARAM[distance_right]"/>
+                <param name="distance_bottom" value="$PARAM[distance_bottom]"/>
             </include>
         </focusedlayout>
     </include>
@@ -2796,6 +2806,8 @@
                 <param name="id" value="$PARAM[shortcutsid]"/>
                 <param name="aspectratio" value="$PARAM[aspectratio]"/>
                 <param name="distance" value="$PARAM[distance]"/>
+                <param name="distance_right" value="$PARAM[distance_right]"/>
+                <param name="distance_bottom" value="$PARAM[distance_bottom]"/>
                 <param name="reflections" value="Skin.HasSetting(home.widgets.show.reflections)"/>
             </include>
         </focusedlayout>
