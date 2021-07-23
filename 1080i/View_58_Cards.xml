@@ -13,7 +13,7 @@
                     <oninfo condition="Container.Content(actors)">RunScript(script.embuary.info,call=person,query='"$INFO[ListItem.Label]"')</oninfo>
                     <visible>String.Contains(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | [Container.Content(episodes) + !String.Contains(Container.FolderPath,plugin://,left)] | Container.Content(actors) | Container.Content(sets) | Container.Content(videos) | Container.Content(seasons)</visible>
                     <top>206</top>
-                    <height>660</height>
+                    <height>668</height>
                     <left>70</left>
                     <right>70</right>
                     <onup>58</onup>
@@ -28,34 +28,34 @@
                     </include>
                     <viewtype label="31198">list</viewtype>
                     <include>ScrolltimeViewsList</include>
-                    <itemlayout width="890" height="330" condition="!Container.Content(episodes)">
+                    <itemlayout width="890" height="334" condition="!Container.Content(episodes)">
                         <control type="image">
                             <left>9</left>
                             <top>9</top>
-                            <right>9</right>
-                            <bottom>9</bottom>
+                            <right>15</right>
+                            <bottom>15</bottom>
                             <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
                             <visible>!Skin.HasSetting(thumbnails.white)</visible>
                         </control>
                         <control type="image">
                             <left>10</left>
                             <top>10</top>
-                            <right>10</right>
-                            <bottom>10</bottom>
+                            <right>16</right>
+                            <bottom>16</bottom>
                             <texture colordiffuse="Dark4" border="5">common/box.png</texture>
                         </control>
                         <include>IndicatorPoster</include>
                         <control type="image">
                             <left>10</left>
                             <top>10</top>
-                            <width>207</width>
-                            <height>310</height>
+                            <width>205</width>
+                            <height>308</height>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <texture diffuse="diffuse/cardposter.png" background="true">$VAR[PosterImage]</texture>
                         </control>
                         <control type="label">
                             <left>246</left>
-                            <right>64</right>
+                            <right>70</right>
                             <top>30</top>
                             <height>50</height>
                             <align>left</align>
@@ -66,7 +66,7 @@
                         </control>
                         <control type="textbox">
                             <left>246</left>
-                            <right>39</right>
+                            <right>45</right>
                             <top>93</top>
                             <height>144</height>
                             <align>justify</align>
@@ -78,8 +78,8 @@
                         </control>
                         <control type="label">
                             <left>237</left>
-                            <right>39</right>
-                            <bottom>33</bottom>
+                            <right>45</right>
+                            <bottom>37</bottom>
                             <aligny>center</aligny>
                             <height>38</height>
                             <align>right</align>
@@ -89,20 +89,20 @@
                             <label fallback="19055">$VAR[LabelYear,,  •  ]$VAR[LabelDuration,,  •  ]$INFO[ListItem.Rating]</label>
                         </control>
                     </itemlayout>
-                    <itemlayout width="890" height="330" condition="Container.Content(episodes)">
+                    <itemlayout width="890" height="334" condition="Container.Content(episodes)">
                         <control type="image">
                             <left>9</left>
                             <top>9</top>
-                            <right>9</right>
-                            <bottom>9</bottom>
+                            <right>15</right>
+                            <bottom>15</bottom>
                             <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
                             <visible>!Skin.HasSetting(thumbnails.white)</visible>
                         </control>
                         <control type="image">
                             <left>10</left>
                             <top>10</top>
-                            <right>10</right>
-                            <bottom>10</bottom>
+                            <right>16</right>
+                            <bottom>16</bottom>
                             <texture colordiffuse="Dark4" border="5">common/box.png</texture>
                         </control>
                         <include>IndicatorPoster</include>
@@ -110,13 +110,13 @@
                             <left>10</left>
                             <top>10</top>
                             <width>400</width>
-                            <height>310</height>
+                            <height>308</height>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <texture diffuse="diffuse/cardthumb.png" background="true">$VAR[FanartImage]</texture>
                         </control>
                         <control type="label">
                             <left>440</left>
-                            <right>64</right>
+                            <right>70</right>
                             <top>30</top>
                             <height>50</height>
                             <align>left</align>
@@ -127,7 +127,7 @@
                         </control>
                         <control type="textbox">
                             <left>440</left>
-                            <right>40</right>
+                            <right>45</right>
                             <top>95</top>
                             <height>144</height>
                             <align>justify</align>
@@ -138,8 +138,8 @@
                         </control>
                         <control type="label">
                             <left>430</left>
-                            <right>39</right>
-                            <bottom>33</bottom>
+                            <right>45</right>
+                            <bottom>37</bottom>
                             <aligny>center</aligny>
                             <height>38</height>
                             <align>right</align>
@@ -149,34 +149,34 @@
                             <label fallback="19055">$VAR[LabelYear,,  •  ]$VAR[LabelDuration,,  •  ]$INFO[ListItem.Rating]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="890" height="330" condition="!Container.Content(episodes)">
+                    <focusedlayout width="890" height="334" condition="!Container.Content(episodes)">
                         <control type="image">
                             <left>9</left>
                             <top>9</top>
-                            <right>9</right>
-                            <bottom>9</bottom>
+                            <right>15</right>
+                            <bottom>15</bottom>
                             <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
                             <visible>!Skin.HasSetting(thumbnails.white)</visible>
                         </control>
                         <control type="image">
                             <left>10</left>
                             <top>10</top>
-                            <right>10</right>
-                            <bottom>10</bottom>
+                            <right>16</right>
+                            <bottom>16</bottom>
                             <texture colordiffuse="Dark1" border="5">common/box.png</texture>
                         </control>
                         <control type="image">
                             <left>10</left>
                             <top>10</top>
-                            <width>207</width>
-                            <height>310</height>
+                            <width>205</width>
+                            <height>308</height>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <texture diffuse="diffuse/cardposter.png" background="true">$VAR[PosterImage]</texture>
                         </control>
                         <include>IndicatorPoster</include>
                         <control type="label">
                             <left>246</left>
-                            <right>64</right>
+                            <right>70</right>
                             <top>30</top>
                             <height>50</height>
                             <align>left</align>
@@ -187,7 +187,7 @@
                         </control>
                         <control type="textbox">
                             <left>246</left>
-                            <right>39</right>
+                            <right>45</right>
                             <top>93</top>
                             <height>144</height>
                             <align>justify</align>
@@ -198,8 +198,8 @@
                         </control>
                         <control type="label">
                             <left>237</left>
-                            <right>39</right>
-                            <bottom>33</bottom>
+                            <right>45</right>
+                            <bottom>40</bottom>
                             <aligny>center</aligny>
                             <height>38</height>
                             <align>right</align>
@@ -209,20 +209,20 @@
                             <label fallback="19055">$VAR[LabelYear,,  •  ]$VAR[LabelDuration,,  •  ]$INFO[ListItem.Rating]</label>
                         </control>
                     </focusedlayout>
-                    <focusedlayout width="890" height="330" condition="Container.Content(episodes)">
+                    <focusedlayout width="890" height="334" condition="Container.Content(episodes)">
                         <control type="image">
                             <left>9</left>
                             <top>9</top>
-                            <right>9</right>
-                            <bottom>9</bottom>
+                            <right>15</right>
+                            <bottom>15</bottom>
                             <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
                             <visible>!Skin.HasSetting(thumbnails.white)</visible>
                         </control>
                         <control type="image">
                             <left>10</left>
                             <top>10</top>
-                            <right>10</right>
-                            <bottom>10</bottom>
+                            <right>16</right>
+                            <bottom>16</bottom>
                             <texture colordiffuse="Dark1" border="5">common/box.png</texture>
                         </control>
                         <include>IndicatorPoster</include>
@@ -230,13 +230,13 @@
                             <left>10</left>
                             <top>10</top>
                             <width>400</width>
-                            <height>310</height>
+                            <height>308</height>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <texture diffuse="diffuse/cardthumb.png" background="true">$VAR[FanartImage]</texture>
                         </control>
                         <control type="label">
                             <left>440</left>
-                            <right>64</right>
+                            <right>70</right>
                             <top>30</top>
                             <height>50</height>
                             <align>left</align>
@@ -247,7 +247,7 @@
                         </control>
                         <control type="textbox">
                             <left>440</left>
-                            <right>40</right>
+                            <right>45</right>
                             <top>95</top>
                             <height>144</height>
                             <align>justify</align>
@@ -258,8 +258,8 @@
                         </control>
                         <control type="label">
                             <left>430</left>
-                            <right>39</right>
-                            <bottom>33</bottom>
+                            <right>45</right>
+                            <bottom>40</bottom>
                             <aligny>center</aligny>
                             <height>38</height>
                             <align>right</align>
