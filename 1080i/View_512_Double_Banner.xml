@@ -154,7 +154,7 @@
                     <animation effect="slide" start="0,0" end="0,-408" time="200" condition="Skin.HasSetting(Flip512)">Conditional</animation>
                     <control type="image">
                         <left>-10</left>
-                        <top>414</top>
+                        <top>410</top>
                         <width>681</width>
                         <height>143</height>
                         <texture border="10">common/$VAR[nofocus-shadow10]</texture>
@@ -162,12 +162,12 @@
                     <control type="image">
                         <width>662</width>
                         <height>125</height>
-                        <top>422</top>
+                        <top>418</top>
                         <texture colordiffuse="Fallback" border="4" background="true">common/box.png</texture>
                     </control>
                     <control type="image">
                         <left>-1</left>
-                        <top>421</top>
+                        <top>417</top>
                         <width>664</width>
                         <height>127</height>
                         <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
@@ -176,7 +176,7 @@
                     <control type="image">
                         <width>662</width>
                         <height>125</height>
-                        <top>422</top>
+                        <top>418</top>
                         <fadetime>PosterFanartFadetime</fadetime>
                         <aspectratio aligny="center" align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="diffuse/pvrinfo.png" background="true">$VAR[BannerImage]</texture>
