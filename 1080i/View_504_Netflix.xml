@@ -84,7 +84,7 @@
             </control>
             <control type="group">
                 <visible>String.IsEmpty(Skin.String(NetflixIconSize))</visible>
-                <left>1596</left>
+                <left>1590</left>
                 <top>225</top>
                 <control type="image">
                     <visible>!String.IsEqual(ListItem.Label,..)  + !String.IsEmpty(ListItem.Art(discart)) + Skin.HasSetting(discartfanart)</visible>
@@ -137,7 +137,7 @@
             </control>
             <control type="group">
                 <visible>!String.IsEmpty(Skin.String(NetflixIconSize))</visible>
-                <left>1614</left>
+                <left>1610</left>
                 <top>200</top>
                 <control type="image">
                     <visible>!String.IsEqual(ListItem.Label,..)  + !String.IsEmpty(ListItem.Art(discart)) + Skin.HasSetting(discartfanart)</visible>
