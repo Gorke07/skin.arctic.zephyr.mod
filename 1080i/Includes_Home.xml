@@ -1558,8 +1558,8 @@
         <control type="image">
             <left>3</left>
             <top>3</top>
-            <right>3</right>
-            <bottom>3</bottom>
+            <right>9</right>
+            <bottom>7</bottom>
             <texture colordiffuse="$VAR[ColorSquares]" border="20">common/selectbox.png</texture>
             <visible>Control.HasFocus($PARAM[id])</visible>
             <include>Animation.SelectBoxHome</include>
@@ -1567,8 +1567,8 @@
         <control type="image">
             <left>3</left>
             <top>3</top>
-            <right>3</right>
-            <bottom>3</bottom>
+            <right>9</right>
+            <bottom>7</bottom>
             <texture colordiffuse="$VAR[ColorHighlightSelectbox2]" border="20">common/gradient-selectbox.png</texture>
             <visible>Control.HasFocus($PARAM[id])</visible>
             <include>Animation.SelectBoxHome</include>
@@ -4952,22 +4952,22 @@
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <right>0</right>
-            <bottom>0</bottom>
+            <right>6</right>
+            <bottom>4</bottom>
             <texture border="11">common/$VAR[nofocus-shadow10]</texture>
         </control>
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <texture colordiffuse="Fallback" border="4" background="true">common/diffuse_box.png</texture>
         </control>
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetposter_new.png" background="true" fallback="DefaultMovies.png">$VAR[PosterImage]</texture>
             <visible>!String.IsEqual(ListItem.DBType,genre) + !String.EndsWith(Container.FolderPath,Genres)</visible>
@@ -4975,8 +4975,8 @@
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetposter_new.png" background="true" fallback="DefaultMovies.png">$VAR[ThumbImageGenres]</texture>
             <visible>String.IsEqual(ListItem.DBType,genre) | String.EndsWith(Container.FolderPath,Genres)</visible>
@@ -4985,8 +4985,8 @@
         <control type="image">
             <left>9</left>
             <top>9</top>
-            <right>9</right>
-            <bottom>9</bottom>
+            <right>15</right>
+            <bottom>13</bottom>
             <texture colordiffuse="BoxWidget" border="4" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
@@ -5050,15 +5050,15 @@
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <right>0</right>
-            <bottom>0</bottom>
+            <right>6</right>
+            <bottom>5</bottom>
             <texture border="11">common/$VAR[nofocus-shadow10]</texture>
         </control>
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <texture colordiffuse="Fallback" border="4" background="true">common/diffuse_box.png</texture>
         </control>
         <control type="image">
@@ -5082,8 +5082,8 @@
         <control type="image">
             <left>9</left>
             <top>9</top>
-            <right>9</right>
-            <bottom>9</bottom>
+            <right>15</right>
+            <bottom>13</bottom>
             <texture colordiffuse="BoxWidget" border="4" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
@@ -5097,23 +5097,23 @@
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <right>0</right>
-            <bottom>0</bottom>
+            <right>6</right>
+            <bottom>4</bottom>
             <texture border="11">common/$VAR[nofocus-shadow10]</texture>
         </control>
         <control type="image">
             <top>10</top>
             <left>10</left>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <texture border="5" colordiffuse="Fallback">common/diffuse_box.png</texture>
             <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
         </control>
         <control type="image">
             <top>10</top>
             <left>10</left>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <aspectratio>scale</aspectratio>
             <texture border="5">special://skin/extras/backgrounds/systeminfo.jpg</texture>
             <animation effect="fade" start="100" end="20" condition="true">Conditional</animation>
@@ -5121,17 +5121,17 @@
         <control type="image">
             <width>150</width>
             <height>150</height>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">keep</aspectratio>
             <texture diffuse="diffuse/widgetsquare_new.png" background="true" fallback="DefaultMovies.png">$INFO[ListItem.Icon]</texture>
         </control>
         <control type="group">
             <left>45</left>
-            <right>45</right>
+            <right>51</right>
             <control type="label">
                 <top>25</top>
-                <bottom>10</bottom>
+                <bottom>14</bottom>
                 <align>left</align>
                 <textcolor>PanelWhite100</textcolor>
                 <selectedcolor>PanelWhite100</selectedcolor>
@@ -5140,7 +5140,7 @@
             </control>
             <control type="label">
                 <top>80</top>
-                <bottom>10</bottom>
+                <bottom>14</bottom>
                 <align>left</align>
                 <textcolor>PanelWhite100</textcolor>
                 <selectedcolor>PanelWhite100</selectedcolor>
@@ -5149,7 +5149,7 @@
             </control>
             <control type="label">
                 <top>116</top>
-                <bottom>10</bottom>
+                <bottom>14</bottom>
                 <align>left</align>
                 <textcolor>PanelWhite100</textcolor>
                 <selectedcolor>PanelWhite100</selectedcolor>
@@ -5162,14 +5162,14 @@
             <width>10</width>
             <height>80</height>
             <left>45</left>
-            <bottom>45</bottom>
+            <bottom>51</bottom>
             <texture colordiffuse="FF0A0A0A" border="4" background="true">common/white.png</texture>
             <visible>String.IsEqual(ListItem.Property(Label4),cpu) | String.IsEqual(ListItem.Property(Label4),ram) | String.IsEqual(ListItem.Property(Label4),storage)</visible>
         </control>
         <control type="progress">
             <height>10</height>
             <width>80</width>
-            <bottom>80</bottom>
+            <bottom>84</bottom>
             <left>10</left>
             <info>System.CPUUsage</info>
             <include>DefSettingsButton</include>
@@ -5179,7 +5179,7 @@
         <control type="progress">
             <height>10</height>
             <width>80</width>
-            <bottom>80</bottom>
+            <bottom>84</bottom>
             <left>10</left>
             <info>system.memory(used)</info>
             <include>DefSettingsButton</include>
@@ -5189,7 +5189,7 @@
         <control type="progress">
             <height>10</height>
             <width>80</width>
-            <bottom>80</bottom>
+            <bottom>84</bottom>
             <left>10</left>
             <info>System.UsedSpace</info>
             <include>DefSettingsButton</include>
@@ -5199,8 +5199,8 @@
         <control type="image">
             <left>9</left>
             <top>9</top>
-            <right>9</right>
-            <bottom>9</bottom>
+            <right>15</right>
+            <bottom>13</bottom>
             <texture colordiffuse="BoxWidget" border="4" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
@@ -5213,8 +5213,8 @@
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <right>0</right>
-            <bottom>0</bottom>
+            <right>6</right>
+            <bottom>4</bottom>
             <texture border="11">common/$VAR[nofocus-shadow10]</texture>
         </control>
         <control type="image">
@@ -5227,11 +5227,11 @@
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
+            <right>16</right>
             <include content="def_bottom" condition="$PARAM[small]">
                 <param name="bottom" value="101" />
             </include>
-            <bottom>10</bottom>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetfanart_new.png" background="true" fallback="DefaultMovies.png">$VAR[WidgetFanartImage]</texture>
             <visible>!String.IsEqual(ListItem.DBType,genre) + !String.EndsWith(Container.FolderPath,Genres)</visible>
@@ -5239,19 +5239,19 @@
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
+            <right>15</right>
             <include content="def_bottom" condition="$PARAM[small]">
                 <param name="bottom" value="101" />
             </include>
-            <bottom>10</bottom>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetfanart_new.png" background="true" fallback="DefaultMovies.png">$VAR[ThumbImageGenres]</texture>
             <visible>String.IsEqual(ListItem.DBType,genre) | String.EndsWith(Container.FolderPath,Genres)</visible>
         </control>
         <control type="label">
-            <bottom>40</bottom>
+            <bottom>44</bottom>
             <left>35</left>
-            <right>35</right>
+            <right>41</right>
             <align>center</align>
             <font>Tiny</font>
             <textcolor>PanelWhite70</textcolor>
@@ -5260,9 +5260,9 @@
             <visible>$PARAM[small]</visible>
         </control>
         <control type="label">
-            <bottom>10</bottom>
+            <bottom>14</bottom>
             <left>35</left>
-            <right>35</right>
+            <right>41</right>
             <align>center</align>
             <font>Tiny</font>
             <textcolor>PanelWhite30</textcolor>
@@ -5273,8 +5273,8 @@
         <control type="image">
             <left>9</left>
             <top>9</top>
-            <right>9</right>
-            <bottom>9</bottom>
+            <right>15</right>
+            <bottom>13</bottom>
             <texture colordiffuse="BoxWidget" border="4" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
@@ -5291,22 +5291,22 @@
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <right>0</right>
-            <bottom>0</bottom>
+            <right>6</right>
+            <bottom>4</bottom>
             <texture border="11">common/$VAR[nofocus-shadow10]</texture>
         </control>
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <texture colordiffuse="Fallback" border="4" background="true">common/diffuse_box.png</texture>
         </control>
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>14</right>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetfanart_new.png" background="true" fallback="DefaultMovies.png">$VAR[FanartImage]</texture>
             <visible>!String.IsEqual(ListItem.DBType,genre) + !String.EndsWith(Container.FolderPath,Genres)</visible>
@@ -5314,8 +5314,8 @@
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetsquare_new.png" background="true" fallback="DefaultMovies.png">$VAR[ThumbImageGenres]</texture>
             <visible>String.IsEqual(ListItem.DBType,genre) | String.EndsWith(Container.FolderPath,Genres)</visible>
@@ -5323,8 +5323,8 @@
         <control type="image">
             <left>9</left>
             <top>9</top>
-            <right>9</right>
-            <bottom>9</bottom>
+            <right>15</right>
+            <bottom>13</bottom>
             <texture colordiffuse="BoxWidget" border="4" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
@@ -5340,29 +5340,29 @@
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <right>0</right>
-            <bottom>0</bottom>
+            <right>6</right>
+            <bottom>4</bottom>
             <texture border="11">common/$VAR[nofocus-shadow10]</texture>
         </control>
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <texture colordiffuse="Fallback" border="4" background="true">common/diffuse_box.png</texture>
         </control>
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetbanner_new.png" background="true" fallback="DefaultMovies.png">$VAR[BannerImage]</texture>
         </control>
         <control type="image">
             <width>500</width>
-            <right>30</right>
-            <bottom>30</bottom>
+            <right>36</right>
+            <bottom>34</bottom>
             <top>30</top>
             <aspectratio align="right" aligny="bottom">keep</aspectratio>
             <texture background="true">$VAR[ClearLogoHome]</texture>
@@ -5371,8 +5371,8 @@
         <control type="image">
             <left>9</left>
             <top>9</top>
-            <right>9</right>
-            <bottom>9</bottom>
+            <right>15</right>
+            <bottom>13</bottom>
             <texture colordiffuse="BoxWidget" border="4" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
@@ -5392,25 +5392,25 @@
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <right>0</right>
-            <bottom>0</bottom>
+            <right>6</right>
+            <bottom>4</bottom>
             <texture border="11">common/$VAR[nofocus-shadow10]</texture>
         </control>
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
-            <bottom>10</bottom>
+            <right>16</right>
+            <bottom>14</bottom>
             <texture colordiffuse="Fallback" border="4" background="true">common/diffuse_box.png</texture>
         </control>
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>390</right>
+            <right>396</right>
             <include content="def_bottom" condition="$PARAM[small]">
                 <param name="bottom" value="101" />
             </include>
-            <bottom>10</bottom>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetfanart_new.png" background="true" fallback="DefaultMovies.png">$VAR[PosterImage]</texture>
             <visible>$PARAM[poster]</visible>
@@ -5421,11 +5421,11 @@
             </include>
             <left>10</left>
             <top>10</top>
-            <right>10</right>
+            <right>16</right>
             <include content="def_bottom" condition="$PARAM[small]">
                 <param name="bottom" value="101" />
             </include>
-            <bottom>10</bottom>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetfanart_new.png" background="true" fallback="DefaultMovies.png">$VAR[WidgetThumbnailImage]</texture>
             <visible>!String.IsEqual(ListItem.DBType,genre) + !String.EndsWith(Container.FolderPath,Genres)</visible>
@@ -5433,31 +5433,31 @@
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>10</right>
+            <right>16</right>
             <include content="def_bottom" condition="$PARAM[small]">
                 <param name="bottom" value="101" />
             </include>
-            <bottom>10</bottom>
+            <bottom>14</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="diffuse/widgetfanart_new.png" background="true" fallback="DefaultMovies.png">$VAR[ThumbImageGenres]</texture>
             <visible>String.IsEqual(ListItem.DBType,genre) | String.EndsWith(Container.FolderPath,Genres)</visible>
         </control>
         <control type="image">
             <width>200</width>
-            <right>30</right>
+            <right>36</right>
             <include content="def_bottom" condition="$PARAM[small]">
                 <param name="bottom" value="101" />
             </include>
-            <bottom>30</bottom>
+            <bottom>34</bottom>
             <aspectratio align="right" aligny="bottom">keep</aspectratio>
             <texture background="true">$VAR[ClearLogoHome]</texture>
             <visible>$PARAM[clearlogo]</visible>
             <visible>!String.IsEqual(ListItem.DBType,genre) + !String.EndsWith(Container.FolderPath,Genres)</visible>
         </control>
         <control type="label">
-            <bottom>40</bottom>
+            <bottom>44</bottom>
             <left>35</left>
-            <right>35</right>
+            <right>41</right>
             <align>center</align>
             <font>Tiny</font>
             <textcolor>PanelWhite70</textcolor>
@@ -5466,9 +5466,9 @@
             <visible>$PARAM[small]</visible>
         </control>
         <control type="label">
-            <bottom>10</bottom>
+            <bottom>14</bottom>
             <left>35</left>
-            <right>35</right>
+            <right>41</right>
             <align>center</align>
             <font>Tiny</font>
             <textcolor>PanelWhite30</textcolor>
@@ -5479,8 +5479,8 @@
         <control type="image">
             <left>9</left>
             <top>9</top>
-            <right>9</right>
-            <bottom>9</bottom>
+            <right>15</right>
+            <bottom>13</bottom>
             <texture colordiffuse="BoxWidget" border="4" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
@@ -5493,9 +5493,9 @@
 
     <include name="include.widget.poster">
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="height_reflection" value="$PARAM[height_reflection]" default="325"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="height_reflection" value="$PARAM[height_reflection]" default="319"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <param name="visible_title_overlay" value="$PARAM[visible_title_overlay]" default="false"/>
         <definition>
         <control type="group">
@@ -5510,9 +5510,9 @@
             <top>$PARAM[top]</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[PosterImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5523,9 +5523,9 @@
 
     <include name="include.widget.season">
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="height_reflection" value="$PARAM[height_reflection]" default="325"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="height_reflection" value="$PARAM[height_reflection]" default="319"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <param name="visible_title_overlay" value="$PARAM[visible_title_overlay]" default="false"/>
         <definition>
         <control type="group">
@@ -5566,9 +5566,9 @@
 
     <include name="include.widget.square">
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="height_reflection" value="$PARAM[height_reflection]" default="325"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="height_reflection" value="$PARAM[height_reflection]" default="319"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <definition>
         <control type="group">
             <height>$PARAM[height]</height>
@@ -5599,8 +5599,8 @@
 
     <include name="include.widget.fanart">
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <param name="small" value="$PARAM[smallfanart]" default="false"/>
         <definition>
         <control type="group">
@@ -5615,9 +5615,9 @@
             <top>$PARAM[top]</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[WidgetFanartImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5627,8 +5627,8 @@
     </include>
 
     <include name="include.widget.landscape">
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
         <definition>
         <control type="group">
@@ -5642,9 +5642,9 @@
             <top>$PARAM[top]</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[FanartImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5655,7 +5655,7 @@
 
     <include name="include.widget.banner">
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
-        <param name="height" value="$PARAM[height]" default="325"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
         <definition>
         <control type="group">
             <height>$PARAM[height]</height>
@@ -5668,9 +5668,9 @@
             <top>305</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[BannerImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5680,8 +5680,8 @@
     </include>
 
     <include name="include.widget.thumb">
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
         <param name="small" value="$PARAM[smallthumb]" default="false"/>
         <definition>
@@ -5699,9 +5699,9 @@
             <top>$PARAM[top]</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[WidgetThumbnailImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5711,9 +5711,9 @@
     </include>
 
     <include name="include.widget.poster.focus">
-        <param name="height" value="$PARAM[height]" default="325"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <param name="visible_title_overlay" value="$PARAM[visible_title_overlay]" default="false"/>
         <definition>
         <control type="group">
@@ -5721,9 +5721,9 @@
             <top>$PARAM[top]</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[PosterImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5743,7 +5743,7 @@
     </include>
 
     <include name="include.widget.season.focus">
-        <param name="height" value="$PARAM[height]" default="325"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
         <param name="top" value="$PARAM[top]" default="305"/>
         <param name="visible_title_overlay" value="$PARAM[visible_title_overlay]" default="false"/>
@@ -5789,8 +5789,8 @@
 
     <include name="include.widget.square.focus">
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="height_reflection" value="$PARAM[height_reflection]" default="325"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="height_reflection" value="$PARAM[height_reflection]" default="319"/>
         <param name="top" value="$PARAM[top]" default="305"/>
         <definition>
         <control type="group">
@@ -5828,8 +5828,8 @@
 
     <include name="include.widget.fanart.focus">
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <param name="small" value="$PARAM[smallfanart]" default="false"/>
         <definition>
         <control type="group">
@@ -5837,9 +5837,9 @@
             <top>$PARAM[top]</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[WidgetFanartImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5859,8 +5859,8 @@
     </include>
 
     <include name="include.widget.landscape.focus">
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
         <definition>
         <control type="group">
@@ -5868,9 +5868,9 @@
             <top>$PARAM[top]</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[FanartImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5889,7 +5889,7 @@
     </include>
 
     <include name="include.widget.banner.focus">
-        <param name="height" value="$PARAM[height]" default="325"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
         <definition>
         <control type="group">
             <height>$PARAM[height]</height>
@@ -5902,12 +5902,12 @@
         </control>
         <control type="group">
             <height>$PARAM[height]</height>
-            <top>305</top>
+            <top>301</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[BannerImage]</texture>
                 <visible>$PARAM[reflections]</visible>
@@ -5917,8 +5917,8 @@
     </include>
 
     <include name="include.widget.thumb.focus">
-        <param name="height" value="$PARAM[height]" default="325"/>
-        <param name="top" value="$PARAM[top]" default="305"/>
+        <param name="height" value="$PARAM[height]" default="319"/>
+        <param name="top" value="$PARAM[top]" default="301"/>
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
         <param name="small" value="$PARAM[smallthumb]" default="false"/>
         <definition>
@@ -5927,9 +5927,9 @@
             <top>$PARAM[top]</top>
             <control type="image">
                 <left>10</left>
-                <top>10</top>
-                <right>10</right>
-                <bottom>10</bottom>
+                <top>4</top>
+                <right>16</right>
+                <bottom>14</bottom>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture flipy="true" diffuse="diffuse/listposter-ref-widgets.png" background="true">$VAR[WidgetThumbnailImage]</texture>
                 <visible>$PARAM[reflections]</visible>

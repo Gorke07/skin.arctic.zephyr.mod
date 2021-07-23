@@ -3185,7 +3185,7 @@
     </include>
 
     <include name="IndicatorPoster">
-        <param name="right" value="$PARAM[right]" default="0"/>
+        <param name="right" value="$PARAM[right]" default="6"/>
         <param name="top" value="$PARAM[top]" default="0"/>
         <param name="indicatorbackground" value="$PARAM[indicatorbackground]" default="false"/>
         <definition>
