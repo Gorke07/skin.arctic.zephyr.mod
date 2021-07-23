@@ -29,13 +29,13 @@
                     <include>ScrolltimeViewsList</include>
                     <itemlayout height="355" width="224">
                         <control type="group">
-                            <height>325</height>
+                            <height>319</height>
                             <include content="include.widget.poster">
                                 <param name="id" value="516"/>
                             </include>
                         </control>
                         <control type="label">
-                            <top>305</top>
+                            <top>301</top>
                             <width>220</width>
                             <align>center</align>
                             <font>Mini</font>
@@ -45,7 +45,7 @@
                     </itemlayout>
                     <focusedlayout height="355" width="224">
                         <control type="group">
-                            <height>325</height>
+                            <height>319</height>
                             <include content="include.widget.poster.focus">
                                 <param name="id" value="516"/>
                             </include>
@@ -54,7 +54,7 @@
                             </include>
                         </control>
                         <control type="label">
-                            <top>305</top>
+                            <top>301</top>
                             <width>220</width>
                             <align>center</align>
                             <font>Mini</font>

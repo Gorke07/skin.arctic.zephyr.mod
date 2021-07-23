@@ -1579,16 +1579,16 @@
         <control type="image">
             <left>3</left>
             <top>3</top>
-            <right>3</right>
-            <bottom>3</bottom>
+            <right>9</right>
+            <bottom>7</bottom>
             <texture colordiffuse="$VAR[ColorSquares]" border="20">common/selectbox.png</texture>
             <visible>$PARAM[visible]</visible>
         </control>
         <control type="image">
             <left>3</left>
             <top>3</top>
-            <right>3</right>
-            <bottom>3</bottom>
+            <right>9</right>
+            <bottom>7</bottom>
             <texture colordiffuse="$VAR[ColorHighlightSelectbox2]" border="20">common/gradient-selectbox.png</texture>
             <visible>$PARAM[visible]</visible>
         </control>
