@@ -5464,7 +5464,7 @@
         <control type="image">
             <left>10</left>
             <top>10</top>
-            <right>396</right>
+            <right>390</right>
             <include content="def_bottom" condition="$PARAM[small]">
                 <param name="bottom" value="101" />
             </include>
