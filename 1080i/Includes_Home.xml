@@ -1605,19 +1605,19 @@
             <control type="group">
                 <visible>!$EXP[HomeIsModernMultiWidgets] + !$EXP[HomeIsVerticalMultiWidgets]</visible>
                 <control type="image">
-                    <top>$PARAM[bordertopleft]</top>
-                    <left>$PARAM[bordertopleft]</left>
-                    <right>$PARAM[borderright]</right>
-                    <bottom>$PARAM[borderbottom]</bottom>
+                    <top>$PARAM[bordertopbottom]</top>
+                    <left>$PARAM[borderleftright]</left>
+                    <right>$PARAM[borderleftright]</right>
+                    <bottom>$PARAM[bordertopbottom]</bottom>
                     <texture border="5" colordiffuse="Panel">common/box.png</texture>
                     <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
                 </control>
                 <control type="multiimage" description="Fanart">
                     <visible>!Skin.HasSetting(weather.hidefanart) + !Skin.HasSetting(weather.fanart.widgets) + String.Contains(Skin.String(weather.fanart.path),multi) + !String.IsEmpty(Skin.String(weather.fanart.path))</visible>
-                    <top>$PARAM[bordertopleft]</top>
-                    <left>$PARAM[bordertopleft]</left>
-                    <right>$PARAM[borderright]</right>
-                    <bottom>$PARAM[borderbottom]</bottom>
+                    <top>$PARAM[bordertopbottom]</top>
+                    <left>$PARAM[borderleftright]</left>
+                    <right>$PARAM[borderleftright]</right>
+                    <bottom>$PARAM[bordertopbottom]</bottom>
                     <fadetime>600</fadetime>
                     <timeperimage>12000</timeperimage>
                     <randomize>true</randomize>
@@ -1627,10 +1627,10 @@
                 </control>
                 <control type="image" description="Fanart">
                     <visible>!Skin.HasSetting(weather.hidefanart) + !Skin.HasSetting(weather.fanart.widgets) + !String.Contains(Skin.String(weather.fanart.path),multi) + !String.IsEmpty(Skin.String(weather.fanart.path))</visible>
-                    <top>$PARAM[bordertopleft]</top>
-                    <left>$PARAM[bordertopleft]</left>
-                    <right>$PARAM[borderright]</right>
-                    <bottom>$PARAM[borderbottom]</bottom>
+                    <top>$PARAM[bordertopbottom]</top>
+                    <left>$PARAM[borderleftright]</left>
+                    <right>$PARAM[borderleftright]</right>
+                    <bottom>$PARAM[bordertopbottom]</bottom>
                     <aspectratio>scale</aspectratio>
                     <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
                     <texture background="true">$INFO[Skin.String(weather.fanart.path)]$PARAM[FanartCode]$INFO[ListItem.Property(FanartCode)].jpg</texture>
@@ -1931,37 +1931,54 @@
     </include>
 
     <include name="weatherlayoutwidgetsvertical.poster">
-        
-        <include>def_weatherposter</include>
+        <control type="group">
+            <bottom>5</bottom>
+            <include>def_weatherposter</include>
+        </control>
     </include>
 
     <include name="weatherlayoutwidgetsvertical.square">
-        <include>def_weathersquare</include>
+        <control type="group">
+            <bottom>5</bottom>
+            <include>def_weathersquare</include>
+        </control>
     </include>
 
     <include name="weatherlayoutwidgetsvertical.fanart">
-        <include>def_weatherfanart</include>
+        <control type="group">
+            <bottom>5</bottom>
+            <include>def_weatherfanart</include>
+        </control>
     </include>
 
     <include name="weatherlayoutwidgetsvertical.poster.focus">
-        <include>def_weatherposter</include>
-        <include content="def_widgetfocus">
-            <param name="id" value="$PARAM[id]"/>
-        </include>
+        <control type="group">
+            <bottom>5</bottom>
+            <include>def_weatherposter</include>
+            <include content="def_widgetfocus">
+                <param name="id" value="$PARAM[id]"/>
+            </include>
+        </control>
     </include>
 
     <include name="weatherlayoutwidgetsvertical.square.focus">
-        <include>def_weathersquare</include>
-        <include content="def_widgetfocus">
+        <control type="group">
+            <bottom>5</bottom>
+            <include>def_weathersquare</include>
+            <include content="def_widgetfocus">
             <param name="id" value="$PARAM[id]"/>
-        </include>
+            </include>
+        </control>
     </include>
 
     <include name="weatherlayoutwidgetsvertical.fanart.focus">
-        <include>def_weatherfanart</include>
-        <include content="def_widgetfocus">
-            <param name="id" value="$PARAM[id]"/>
-        </include>
+        <control type="group">
+            <bottom>5</bottom>
+            <include>def_weatherfanart</include>
+            <include content="def_widgetfocus">
+                <param name="id" value="$PARAM[id]"/>
+            </include>
+        </control>
     </include>
 
     <include name="layoutweather">
@@ -5637,7 +5654,10 @@
     </include>
 
     <include name="include.widget.square.system">
-        <include>def_widgetsquare_system</include>
+        <control type="group">
+            <bottom>5</bottom>
+            <include>def_widgetsquare_system</include>
+        </control>
     </include>
 
     <include name="include.widget.fanart">
@@ -5865,10 +5885,13 @@
     </include>
 
     <include name="include.widget.square.system.focus">
-        <include>def_widgetsquare_system</include>
-        <include content="def_widgetfocus">
-            <param name="id" value="$PARAM[id]"/>
-        </include>
+        <control type="group">
+            <bottom>5</bottom>
+            <include>def_widgetsquare_system</include>
+            <include content="def_widgetfocus">
+                <param name="id" value="$PARAM[id]"/>
+            </include>
+        </control>
     </include>
 
     <include name="include.widget.fanart.focus">
