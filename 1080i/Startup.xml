@@ -54,10 +54,10 @@
             </control>
             <control type="button" id="9315">
                 <visible allowhiddenfocus="true">false</visible>
-                <onfocus condition="System.AddonIsEnabled(script.skin.info.service)">RunScript(script.skin.info.service)</onfocus>
-                <onfocus condition="String.IsEmpty(Window(home).Property(SkinInitStarted)) + !String.IsEmpty(Skin.String(StartupPlaylist))">PlayMedia($ESCINFO[Skin.String(StartupPlaylist)])</onfocus>
-                <onfocus condition="!Player.HasVideo + !String.IsEmpty(Skin.String(StartupPlaylist))">ReplaceWindow(Home)</onfocus>
-                <onfocus condition="String.IsEmpty(Skin.String(StartupPlaylist)) + !Skin.HasSetting(disable.startup.window)">AlarmClock(GoHome,ReplaceWindow(home),00:03,silent,false)</onfocus>
+                <onfocus condition="System.AddonIsEnabled(script.skin.info.service) + System.Loggedon">RunScript(script.skin.info.service)</onfocus>
+                <onfocus condition="String.IsEmpty(Window(home).Property(SkinInitStarted)) + !String.IsEmpty(Skin.String(StartupPlaylist)) + System.Loggedon">PlayMedia($ESCINFO[Skin.String(StartupPlaylist)])</onfocus>
+                <onfocus condition="!Player.HasVideo + !String.IsEmpty(Skin.String(StartupPlaylist)) + System.Loggedon">ReplaceWindow(Home)</onfocus>
+                <onfocus condition="String.IsEmpty(Skin.String(StartupPlaylist)) + !Skin.HasSetting(disable.startup.window) + System.Loggedon">AlarmClock(GoHome,ReplaceWindow(home),00:03,silent,false)</onfocus>
             </control>
             <control type="label">
                 <description>Loading</description>
